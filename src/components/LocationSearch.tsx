@@ -1,5 +1,16 @@
-import type { Place } from '../api/Place';
+import { Place } from '../api/Place';
+import { useState } from 'react';
 
-export default function LocationSearch() {
-  return <div>Search For A Location!</div>
+interface LocationSearchProps {
+  onPlaceClick: (place: Place) => void;
+}
+
+export default function LocationSearch({ onPlaceClick }: LocationSearchProps) {
+  const [places, setPlaces] = useState<Place[]>([])
+
+  return (
+    <div>
+      Search For A Location!
+    </div>
+  );
 }
