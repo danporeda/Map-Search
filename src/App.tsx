@@ -9,10 +9,10 @@ function App() {
   return (
    <div className="h-screen w-screen grid grid-cols-12">
     <div className="col-span-3 p-3">
-      <LocationSearch onPlaceClick={(p) => setPlace(p)}/>
+      <LocationSearch onPlaceClick={(p) => setPlace(p)} />
     </div>
     <div className="col-span-9">
-      <Map place={place}/>
+      <Map place={place} />
     </div>
    </div>
   )
